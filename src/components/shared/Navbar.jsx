@@ -78,7 +78,7 @@ export default function Navbar() {
                 <Link href="/" className="flex items-center navbar-start gap-3 group">
                 <div className="relative">
                     <div className="absolute inset-0 bg-linear-to-r from-blue-500 to-purple-500 blur-xl hover:opacity-70 transition duration-500"></div>
-                    <img src="/images/nav-logo.png" alt="logo" className="relative w-11 h-11 rounded-full border-2 border-while shadow-lg group-hover:rotate-6 transition-all duration-500" />
+                    <img src="/images/nav-logo.png" alt="logo" className="relative w-11 h-11 rounded-full border-2 border-white shadow-lg group-hover:rotate-6 transition-all duration-500" />
                 </div>
                 <div>
                     <h1 className="text-3xl font-black bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent tracking-wide">
@@ -98,7 +98,7 @@ export default function Navbar() {
                 {!user ? (
                     <>
                     <Link href="/login">
-                    <button className="cursor-pointer flex items-center gap-2 px-7 py-3 rounded-full bg-white text--[#5B5BFF] font-semibold border border-gray-100 shadow-md shadow-blue-100 hover:shadow-lg hover:shadow-blue-200 hover:translate-y-1 active:scale-90 transition-all duration-300">
+                    <button className="cursor-pointer flex items-center gap-2 px-7 py-3 rounded-full bg-white text-[#5B5BFF] font-semibold border border-gray-100 shadow-md shadow-blue-100 hover:shadow-lg hover:shadow-blue-200 hover:translate-y-1 active:scale-90 transition-all duration-300">
                         <FaSignInAlt />
                         Login
                     </button>
