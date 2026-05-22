@@ -98,14 +98,14 @@ export default function Navbar() {
                 {!user ? (
                     <>
                     <Link href="/login">
-                    <button className="cursor-pointer flex items-center gap-2 px-7 py-3 rounded-full bg-white text-[#5B5BFF] font-semibold border border-gray-100 shadow-md shadow-blue-100 hover:shadow-lg hover:shadow-blue-200 hover:translate-y-1 active:scale-90 transition-all duration-300">
+                    <button className="cursor-pointer flex items-center gap-2 px-7 py-3 rounded-full bg-white text-[#5B5BFF] font-semibold border border-gray-100 shadow-md shadow-blue-100 hover:shadow-lg hover:shadow-blue-200 hover:-translate-y-1 active:scale-90 transition-all duration-300">
                         <FaSignInAlt />
                         Login
                     </button>
                     </Link>
 
                     <Link href="/register">
-                    <button className="cursor-pointer flex items-center gap-2 px-8 py-3 rounded-full text-white font-semibold bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 shadow-md shadow-purple-300 hover:shadow-lg hover:shadow-purple-400 hover:translate-y-1 active:scale-90 transition-all duration-300">
+                    <button className="cursor-pointer flex items-center gap-2 px-8 py-3 rounded-full text-white font-semibold bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 shadow-md shadow-purple-300 hover:shadow-lg hover:shadow-purple-400 hover:-translate-y-1 active:scale-90 transition-all duration-300">
                         <FaUserPlus/>
                         Register
                     </button>

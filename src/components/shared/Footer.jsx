@@ -74,7 +74,7 @@ export default function Footer() {
                     {/* Right Social */}
                     <div className="grid grid-cols-2 gap-8">
                         {[<FaFacebookF />, <FaXTwitter />, <FaGithub />, <FaLinkedin />,].map((icon, idx) => (
-                            <a key={idx} href="#" className="group relative w-12 h-12 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl flex items-center justify-center overflow-hidden hover:translate-y-2 transition-all duration-500">
+                            <a key={idx} href="#" className="group relative w-12 h-12 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl flex items-center justify-center overflow-hidden hover:-translate-y-2 transition-all duration-500">
                                 {/* Hover bg */}
                                 <div className="absolute inset-0 bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
                                 <span className="relative text-lg text-white">{icon}
