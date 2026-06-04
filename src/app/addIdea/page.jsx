@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import{ toast } from "react-toastify";
-import { FaRocket, FaLightbulb, FaImage, FaUser } from "react-icons/fa";
+import { FaRocket, FaLightbulb, FaImage, FaUser, FaChevronDown } from "react-icons/fa";
 import "animate.css";
 
 export default function AddIdeaPage() {
@@ -131,7 +131,8 @@ export default function AddIdeaPage() {
               <FaRocket className="text-blue-500"/>
                 Category
             </label>
-            <select name="category" className={`w-full rounded-2xl bg-white dark:bg-white/5 border px-5 py-4 outline-none transition-all duration-300 text-gray-800 dark:text-white focus:scale-[1.01] ${
+            <div className="relative">
+            <select name="category" className={`w-full rounded-2xl appearance-none bg-white dark:bg-white/5 border px-5 py-4 outline-none transition-all duration-300 text-gray-800 dark:text-white focus:scale-[1.01] ${
               errors.category ? "border-red-500 focus:ring-4 focus:ring-red-500/20" : "border-gray-200 dark:border-white/10 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20"
             }`}>
 
@@ -143,6 +144,8 @@ export default function AddIdeaPage() {
               <option>Business</option>
               <option>Finance</option>
             </select>
+            <FaChevronDown className="absolute right-5 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none text-sm"/> 
+            </div>
             {errors.category && (
               <p className="mt-2 text-sm text-red-500 animate__animated animate__fadeIn">
                 {errors.category}
